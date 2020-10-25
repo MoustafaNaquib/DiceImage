@@ -49,4 +49,4 @@ if __name__ == "__main__":
     response = requests.get(url)
     image = Image.open(BytesIO(response.content))
     dice_image = build_dice_image(image)
-    dice_image.show()
+    dice_image.save('test-out.jpg')
